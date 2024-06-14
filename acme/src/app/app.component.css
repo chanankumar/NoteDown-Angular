@@ -27,6 +27,7 @@ body {
 
 .home-note-header-left {
     text-align: left;
+    position: relative;
 }
 
 .home-note-header-right {

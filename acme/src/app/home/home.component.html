@@ -1,8 +1,8 @@
 <div class="note-container">
-    <div class="note-item">Text Note</div>
-    <div class="note-item">Article Note</div>
-    <div class="note-item">Picture Note</div>
-    <div class="note-item">Document Note</div>
-    <div class="note-item">Soon ......</div>
-    <div class="note-item">Your Notes</div>
+    <div class="note-item" (click)="navigateTo('text')">Text Note</div>
+    <div class="note-item" (click)="navigateTo('article')">Article Note</div>
+    <div class="note-item" (click)="navigateTo('picture')">Picture Note</div>
+    <div class="note-item" (click)="navigateTo('document')">Document Note</div>
+    <div class="note-item" title="SOON....">Soon ......</div>
+    <div class="note-item" (click)="navigateTo('notes')">Your Notes</div>
 </div>
