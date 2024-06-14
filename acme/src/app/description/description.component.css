@@ -1,0 +1,6 @@
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    overflow: hidden;
+}
