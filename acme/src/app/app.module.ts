@@ -13,6 +13,8 @@ import { ArticleNoteComponent } from './article-note/article-note.component';
 import { PictureNoteComponent } from './picture-note/picture-note.component';
 import { DocumentNoteComponent } from './document-note/document-note.component';
 import { NotesComponent } from './notes/notes.component';
+import { TextNoteLandingComponent } from './text-note-landing/text-note-landing.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,13 @@ import { NotesComponent } from './notes/notes.component';
     ArticleNoteComponent,
     PictureNoteComponent,
     DocumentNoteComponent,
-    NotesComponent
+    NotesComponent,
+    TextNoteLandingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

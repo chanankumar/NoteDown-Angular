@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-description',
@@ -8,7 +8,8 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 export class DescriptionComponent {
 
   @ViewChild('autoResizeTextarea') textarea!: ElementRef<HTMLTextAreaElement>;
-
+  inputValue: string = '';
+  @Output() valueChange = new EventEmitter<string>();
 
   ngAfterViewInit(): void {
     this.adjust();
@@ -16,6 +17,7 @@ export class DescriptionComponent {
 
   onInput(): void {
     this.adjust();
+    this.valueChange.emit(this.inputValue);
   }
 
   private adjust(): void {

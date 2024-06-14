@@ -2,3 +2,18 @@
 body {
     margin: 0px;
 }
+
+.alignment-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+    .align-to-left {
+        text-align: left;
+    }
+    .align-to-right {
+        text-align: right;
+    }
+
+}

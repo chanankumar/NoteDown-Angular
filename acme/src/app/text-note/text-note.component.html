@@ -1,1 +1,20 @@
-<p>text-note works!</p>
+<div class="text-note-container">
+    <div class="alignment-container">
+        <div class="align-to-left">
+            Text Note
+        </div>
+        <div class="actionButtonContainer align-to-right">
+            <button class="actionButtonSave" (click)="saveTextNote()">
+                Save
+            </button>
+            <button class="actionButtonCancel" (click)="goToTextNoteLanding()">
+                Cancel
+            </button>
+        </div>
+    </div> 
+    
+    <div class="description-field-conatiner">
+        <app-description (valueChange)="updateDescrtionValue($event)" class="description"></app-description>
+    </div>
+</div>
+

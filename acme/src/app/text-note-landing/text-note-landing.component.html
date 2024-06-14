@@ -1,0 +1,8 @@
+<div class="showTextNoteContainer">
+
+    <div class="actionButtonContainer align-to-right">
+        <button class="" (click)="goToAddTextNote()">New</button>
+        <button class="" (click)="goToAddTextNote()">back</button>
+    </div>
+    <div *ngFor = 'let data of textNoteData;' class="showTextNote">{{data.description}}</div>
+</div>

@@ -1,0 +1,8 @@
+.description-field-conatiner {
+    margin : 20px
+}
+.actionButtonSave {
+    margin-right: 10px;
+}
+
+:host(app-text-note) {height: 100%; width: 100%;}

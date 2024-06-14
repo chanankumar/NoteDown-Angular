@@ -1,0 +1,21 @@
+.showTextNote {
+    padding : 10px;
+    background-color: #EEF7FF;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.showTextNoteContainer {
+    margin: 20px
+}
+
+.actionButtonContainer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+:host(app-text-note-landing) {height: 100%; width: 100%;}
