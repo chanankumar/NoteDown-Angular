@@ -20,6 +20,11 @@ export class TextNoteLandingComponent {
   }
 
   goToAddTextNote() {
+    this.router.navigate(['text']);
+  }
+
+  goToHomePage(){
     this.router.navigate(['home']);
+
   }
 }
