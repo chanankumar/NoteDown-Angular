@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-picture',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './picture.component.css'
 })
 export class PictureComponent {
+  @Output() valueChange = new EventEmitter<string>();
 
+  onInput(event): void {
+    this.valueChange.emit(event.target.files[0]);
+  }
 }

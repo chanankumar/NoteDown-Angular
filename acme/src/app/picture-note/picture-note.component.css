@@ -1,0 +1,19 @@
+.picture-note-field-conatiner {
+    margin : 20px;
+    display: block;
+}
+.actionButtonSave {
+    margin-right: 10px;
+}
+
+.picture-title {
+    margin-bottom: 5px;
+}
+
+.picture-description-title { 
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+:host(app-picture-note) {height: 100%; width: 100%;}

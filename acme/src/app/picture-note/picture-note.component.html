@@ -1,1 +1,26 @@
-<p>picture-note works!</p>
+<div class="picture-note-container">
+    <div class="alignment-container">
+        <div class="align-to-left">
+            Article Note
+        </div>
+        <div class="actionButtonContainer align-to-right">
+            <button class="actionButtonSave" (click)="savePictureNote()">
+                Save
+            </button>
+            <button class="actionButtonCancel" (click)="goToPictureNoteLanding()">
+                Cancel
+            </button>
+        </div>
+    </div> 
+    
+    <div class="picture-note-field-conatiner">
+        <app-picture (valueChange)="updatePictureValue($event)" class="picture-input"></app-picture>
+
+        <div class="picture-title">Title:</div>
+        <app-title (valueChange)="updateTitleValue($event)" class="title-input"></app-title>
+
+        <div class="picture-description-title">Description:</div>
+        <app-description (valueChange)="updateDescriptionValue($event)" class="article-description-input"></app-description>
+    </div>
+</div>
+

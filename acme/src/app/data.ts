@@ -1,6 +1,9 @@
 export let dataCenter:any =  {
     "textnotes" : [{"description" : 'description example'}],
     "article" : [{"title" : "title" ,"description" : 'description example'}],
-    "picturenotes" : [],
+    "picturenotes" : [{
+        "title" : "title" ,
+        "description" : 'description example'
+    }],
     "documentnotes" : []
 }

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { dataCenter } from '../data';
 
 @Component({
   selector: 'app-picture-note',
@@ -6,5 +8,46 @@ import { Component } from '@angular/core';
   styleUrl: './picture-note.component.css'
 })
 export class PictureNoteComponent {
+  descriptionValue: string = '';
+  titleValue: string = '';
+  pictureValue: any = '';
 
+
+  constructor(private router: Router) {}
+  
+  savePictureNote() {
+    dataCenter.picturenotes.push({"title" : this.titleValue, "description" : this.descriptionValue});
+    this.router.navigate(['picturelanding']);
+  } 
+
+  goToPictureNoteLanding() {
+    this.router.navigate(['picturelanding']);
+  }
+
+  updateDescriptionValue(value:string) {
+    this.descriptionValue = value;
+  }
+
+  updateTitleValue(value:string) {
+    this.titleValue = value;
+  }
+
+  updatePictureValue(value) {
+    // this.pictureValue = value;
+    const reader = new FileReader();
+
+    reader.addEventListener("load", () => {
+      if(localStorage.getItem('imagesSaved') === null) {
+        localStorage.setItem('imagesSaved', JSON.stringify([]));
+      }
+      let newImageData = {
+        Id : dataCenter.picturenotes.length,
+        imageUrl : reader.result
+      }
+      let data = JSON.parse(localStorage.getItem("imagesSaved"));
+      data.push(newImageData);
+      localStorage.setItem("imagesSaved", JSON.stringify(data))
+    })
+    reader.readAsDataURL(value);
+  }
 }

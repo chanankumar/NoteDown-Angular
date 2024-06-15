@@ -1,0 +1,20 @@
+<div class="showPictureNoteContainer">
+
+    <div class="actionButtonContainer align-to-right">
+        <button class="" (click)="goToAddPictureNote()">New</button>
+        <button class="" (click)="goToHomePage()">back</button>
+    </div>
+    <div *ngFor = 'let data of pictureNoteData;' class="showPictureNote">
+        <span class="image-container">
+            <img class = "imagePreview" [src]="data.imageUrl" alt="Image Preview">
+        </span>
+        <span class="text-container">
+            <div class="picture-title">
+                {{data.title}} : 
+            </div>
+            <div class="picture-description">
+                {{data.description}}
+            </div>
+        </span>
+    </div>
+</div>
