@@ -17,6 +17,7 @@ import { TextNoteLandingComponent } from './text-note-landing/text-note-landing.
 import { FormsModule } from '@angular/forms';
 import { ArticleNoteLandingComponent } from './article-note-landing/article-note-landing.component';
 import { PictureNoteLandingComponent } from './picture-note-landing/picture-note-landing.component';
+import { DocumentNoteLandingComponent } from './document-note-landing/document-note-landing.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { PictureNoteLandingComponent } from './picture-note-landing/picture-note
     NotesComponent,
     TextNoteLandingComponent,
     ArticleNoteLandingComponent,
-    PictureNoteLandingComponent
+    PictureNoteLandingComponent,
+    DocumentNoteLandingComponent
   ],
   imports: [
     BrowserModule,

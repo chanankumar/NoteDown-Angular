@@ -1,1 +1,23 @@
-<p>document-note works!</p>
+<div class="document-note-container">
+    <div class="alignment-container">
+        <div class="align-to-left">
+            Documnet Note
+        </div>
+        <div class="actionButtonContainer align-to-right">
+            <button class="actionButtonSave" (click)="saveDocumentNote()">
+                Save
+            </button>
+            <button class="actionButtonCancel" (click)="goToDocumentNoteLanding()">
+                Cancel
+            </button>
+        </div>
+    </div> 
+    
+    <div class="document-note-field-conatiner">
+        <div class="document-title">Title:</div>
+        <app-title (valueChange)="updateTitleValue($event)" class="title-input"></app-title>
+
+        <app-document (documentChange)="updateDocumentValue($event)" (documentTypeChange)="updateDocumentTypeValue($event)" class="document-input"></app-document>
+    </div>
+</div>
+ 

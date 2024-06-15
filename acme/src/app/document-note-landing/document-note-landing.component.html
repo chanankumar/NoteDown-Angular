@@ -1,0 +1,21 @@
+<div class="showArticleNoteContainer">
+
+    <div class="actionButtonContainer align-to-right">
+        <button class="" (click)="goToAddDocumentNote()">New</button>
+        <button class="" (click)="goToHomePage()">back</button>
+    </div>
+
+    <div *ngFor = 'let data of documentNoteData;' class="showDocumentNote">
+        <div class="document-preview">
+            <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(data.filesUrl)" width="500px" height="300px"></iframe>
+        </div>
+        <span class="text-container">
+            <div class="document-title">
+                {{data.title}}
+            </div>
+            <div class="document-type">
+                Document Type : {{data.documenttype}}
+            </div>
+        </span>
+    </div>
+</div>
