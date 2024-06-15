@@ -1,0 +1,15 @@
+<div class="showArticleNoteContainer">
+
+    <div class="actionButtonContainer align-to-right">
+        <button class="" (click)="goToAddArticleNote()">New</button>
+        <button class="" (click)="goToHomePage()">back</button>
+    </div>
+    <div *ngFor = 'let data of articleNoteData;' class="showArticleNote">
+        <div class="article-title">
+            {{data.title}} : 
+        </div>
+        <div class="article-description">
+            {{data.description}}
+        </div>
+    </div>
+</div>

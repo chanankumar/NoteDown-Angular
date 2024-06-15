@@ -8,6 +8,7 @@ import { DocumentNoteComponent } from './document-note/document-note.component';
 import { PictureNoteComponent } from './picture-note/picture-note.component';
 import { NotesComponent } from './notes/notes.component';
 import { TextNoteLandingComponent } from './text-note-landing/text-note-landing.component';
+import { ArticleNoteLandingComponent } from './article-note-landing/article-note-landing.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path : 'document', component : DocumentNoteComponent},
   { path : 'notes', component : NotesComponent},
   { path : 'textlanding', component : TextNoteLandingComponent},
+  { path : 'articlelanding', component : ArticleNoteLandingComponent},
 ]
 
 @NgModule({

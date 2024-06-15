@@ -1,1 +1,24 @@
-<p>article-note works!</p>
+<div class="article-note-container">
+    <div class="alignment-container">
+        <div class="align-to-left">
+            Article Note
+        </div>
+        <div class="actionButtonContainer align-to-right">
+            <button class="actionButtonSave" (click)="saveArticleNote()">
+                Save
+            </button>
+            <button class="actionButtonCancel" (click)="goToArticleNoteLanding()">
+                Cancel
+            </button>
+        </div>
+    </div> 
+    
+    <div class="article-note-field-conatiner">
+        <div class="article-title">Title:</div>
+        <app-title (valueChange)="updateTitleValue($event)" class="title-input"></app-title>
+
+        <div class="article-description-title">Description:</div>
+        <app-description (valueChange)="updateDescriptionValue($event)" class="article-description-input"></app-description>
+    </div>
+</div>
+

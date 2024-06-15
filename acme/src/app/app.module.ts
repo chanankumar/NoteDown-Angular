@@ -15,6 +15,7 @@ import { DocumentNoteComponent } from './document-note/document-note.component';
 import { NotesComponent } from './notes/notes.component';
 import { TextNoteLandingComponent } from './text-note-landing/text-note-landing.component';
 import { FormsModule } from '@angular/forms';
+import { ArticleNoteLandingComponent } from './article-note-landing/article-note-landing.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     PictureNoteComponent,
     DocumentNoteComponent,
     NotesComponent,
-    TextNoteLandingComponent
+    TextNoteLandingComponent,
+    ArticleNoteLandingComponent
   ],
   imports: [
     BrowserModule,

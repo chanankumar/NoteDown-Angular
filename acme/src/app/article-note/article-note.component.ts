@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { dataCenter } from '../data';
 
 @Component({
   selector: 'app-article-note',
@@ -6,5 +8,25 @@ import { Component } from '@angular/core';
   styleUrl: './article-note.component.css'
 })
 export class ArticleNoteComponent {
+  descriptionValue: string = '';
+  titleValue: string = '';
 
+  constructor(private router: Router) {}
+  
+  saveArticleNote() {
+    dataCenter.article.push({"title" : this.titleValue, "description" : this.descriptionValue});
+    this.router.navigate(['articlelanding']);
+  } 
+
+  goToArticleNoteLanding() {
+    this.router.navigate(['articlelanding']);
+  }
+
+  updateDescriptionValue(value:string) {
+    this.descriptionValue = value;
+  }
+
+  updateTitleValue(value:string) {
+    this.titleValue = value;
+  }
 }
