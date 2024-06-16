@@ -1,16 +1,16 @@
 export let dataCenter:any =  {
     "textnotes" : [{"description" : 'description example'}],
-    "article" : [{"title" : "title" ,"description" : 'description example'}],
+    "article" : [{"title" : "title example" ,"description" : 'description example'}],
     "picturenotes" : [{
-        "title" : "title" ,
+        "title" : "title example" ,
         "description" : 'description example'
     }],
     "documentnotes" : [{
-        "title" : "title" ,
+        "title" : "title example" ,
         "documenttype" : '.pdf'
     }],
     'customnote' : [{
-        "title" : "title" ,
+        "title" : "title example" ,
         "documenttype" : '.pdf',
         'description' : 'example'
     }]
