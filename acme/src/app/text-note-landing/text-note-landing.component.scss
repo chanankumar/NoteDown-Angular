@@ -1,3 +1,5 @@
+@import '../variable.scss';
+
 .showTextNoteContainer {
     margin: 20px;
     margin-left: 0px;
@@ -12,7 +14,7 @@
 
     .showTextNote {
         padding : 10px;
-        background-color: #EEF7FF;
+        background-color: $Oasis;
         width: 100%;
         margin-bottom: 10px;
         margin-right: 10px;

@@ -1,10 +1,12 @@
+@import '../variable.scss';
+  
   .showPictureNote {
   display: flex;
   margin-top: 15px;
   height: 100px;
   align-items: center;
   padding : 10px;
-  background-color: #EEF7FF;
+  background-color: $Oasis;
 
   .image-container {
     padding: 20px;

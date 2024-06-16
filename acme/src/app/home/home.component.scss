@@ -1,3 +1,5 @@
+@import '../variable.scss';
+
 .note-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -9,7 +11,7 @@
     box-sizing: border-box;
 
     .note-item {
-        background-color: #EEF7FF;
+        background-color: $Oasis;
         color: black;
         display: flex;
         justify-content: center;

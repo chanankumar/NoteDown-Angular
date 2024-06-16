@@ -1,10 +1,12 @@
+@import '../variable.scss';
+
 .showDocumentNote {
     display: flex;
     margin-top: 15px;
     height: 350px;
     align-items: center;
     padding : 10px;
-    background-color: #EEF7FF;
+    background-color: $Oasis;
     
     .document-type {
       margin-top : 10px
