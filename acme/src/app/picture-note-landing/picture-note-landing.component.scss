@@ -1,35 +1,24 @@
- 
+  .showPictureNote {
+  display: flex;
+  margin-top: 15px;
+  height: 100px;
+  align-items: center;
+  padding : 10px;
+  background-color: #EEF7FF;
+
   .image-container {
     padding: 20px;
-  }
-  
-  .image-container img {
-    max-width: 100%;
-    max-height: 100px;
-    margin: 0 auto;
-  }
-  
-  .showPictureNote {
-    display: flex;
-    margin-top: 15px;
-    height: 100px;
-    align-items: center;
-    padding : 10px;
-    background-color: #EEF7FF;
-  }
 
-  .actionButtonContainer{
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    padding: 10px;
-    width: 100%;
-  }
+    img {
+      max-width: 100%;
+      max-height: 100px;
+      margin: 0 auto;
+    }
 
-  .imagePreview {
-    height: 100px;
-    width: 100px;
+    .imagePreview {
+      height: 100px;
+      width: 100px;
+    }
   }
-
-  :host(app-picture-note-landing) {height: 100%; width: 100%;}
-  
+}
+:host(app-picture-note-landing) {height: 100%; width: 100%;}

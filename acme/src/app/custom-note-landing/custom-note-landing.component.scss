@@ -1,35 +1,29 @@
-.custom-note-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #7AB2B2;
-    color: black;
-    margin-top : 10px;
-}
+.showCustomNoteContainer{
+    .custom-note-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #7AB2B2;
+        color: black;
+        margin-top : 10px;
 
-.actionButtonContainer{
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    padding: 10px;
-    width: 100%;
-  }
+        .custom-note-left,
+        .custom-note-center,
+        .custom-note-right {
+            flex: 1;
+            text-align: center;
+        }
 
-.custom-note-left,
-.custom-note-center,
-.custom-note-right {
-    flex: 1;
-    text-align: center;
-}
+        .custom-note-left {
+            text-align: left;
+            position: relative;
+        }
 
-.custom-note-left {
-    text-align: left;
-    position: relative;
-}
-
-.custom-note-right {
-    text-align: right;
+        .custom-note-right {
+            text-align: right;
+        }
+    }
 }
 
 :host(app-custom-note-landing) {height: 100%; width: 100%;}

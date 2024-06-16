@@ -1,19 +1,19 @@
-.article-note-field-conatiner {
-    /* margin : 20px; */
-    display: block;
+.article-note-container{
+    .article-note-field-conatiner {
+        /* margin : 20px; */
+        display: block;
+        .article-title {
+            margin-bottom: 5px;
+        }
+        
+        .article-description-title { 
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+    }
+    .actionButtonSave {
+        margin-right: 10px;
+    }
 }
-.actionButtonSave {
-    margin-right: 10px;
-}
-
-.article-title {
-    margin-bottom: 5px;
-}
-
-.article-description-title { 
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-
 
 :host(app-article-note) {height: 100%; width: 100%;}

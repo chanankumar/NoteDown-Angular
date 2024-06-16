@@ -7,36 +7,37 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+
+    .home-note-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #7AB2B2;
+        color: black;
+    }
+    
+    .home-note-header-left,
+    .home-note-header-center,
+    .home-note-header-right {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .home-note-header-left {
+        text-align: left;
+        position: relative;
+    }
+    
+    .home-note-header-right {
+        text-align: right;
+    }
+    
+    .content {
+        flex: 1;
+        display: flex;
+        padding: 20px;
+        box-sizing: border-box;
+    }
 }
 
-.home-note-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #7AB2B2;
-    color: black;
-}
-
-.home-note-header-left,
-.home-note-header-center,
-.home-note-header-right {
-    flex: 1;
-    text-align: center;
-}
-
-.home-note-header-left {
-    text-align: left;
-    position: relative;
-}
-
-.home-note-header-right {
-    text-align: right;
-}
-
-.content {
-    flex: 1;
-    display: flex;
-    padding: 20px;
-    box-sizing: border-box;
-  }
