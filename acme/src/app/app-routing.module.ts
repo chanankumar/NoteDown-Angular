@@ -11,6 +11,7 @@ import { TextNoteLandingComponent } from './text-note-landing/text-note-landing.
 import { ArticleNoteLandingComponent } from './article-note-landing/article-note-landing.component';
 import { PictureNoteLandingComponent } from './picture-note-landing/picture-note-landing.component';
 import { DocumentNoteLandingComponent } from './document-note-landing/document-note-landing.component';
+import { CustomNoteComponent } from './custom-note/custom-note.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path : 'articlelanding', component : ArticleNoteLandingComponent},
   { path : 'picturelanding', component : PictureNoteLandingComponent},
   { path : 'documentlanding', component : DocumentNoteLandingComponent},
+  { path : 'customnote', component : CustomNoteComponent},
 ]
 
 @NgModule({

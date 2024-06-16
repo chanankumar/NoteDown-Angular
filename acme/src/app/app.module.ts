@@ -18,6 +18,11 @@ import { FormsModule } from '@angular/forms';
 import { ArticleNoteLandingComponent } from './article-note-landing/article-note-landing.component';
 import { PictureNoteLandingComponent } from './picture-note-landing/picture-note-landing.component';
 import { DocumentNoteLandingComponent } from './document-note-landing/document-note-landing.component';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { NavigationEffects } from './store/navigation.effects';
+import { CustomNoteComponent } from './custom-note/custom-note.component';
+import { commonReducer, navigationReducer } from './store/navigation.reducer';
 
 @NgModule({
   declarations: [
@@ -35,12 +40,15 @@ import { DocumentNoteLandingComponent } from './document-note-landing/document-n
     TextNoteLandingComponent,
     ArticleNoteLandingComponent,
     PictureNoteLandingComponent,
-    DocumentNoteLandingComponent
+    DocumentNoteLandingComponent,
+    CustomNoteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    StoreModule.forRoot({ navigation: navigationReducer , textNoteData: commonReducer }),
+    EffectsModule.forRoot([NavigationEffects])
   ],
   providers: [],
   bootstrap: [AppComponent]
