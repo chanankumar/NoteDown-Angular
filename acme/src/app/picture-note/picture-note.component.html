@@ -6,6 +6,7 @@
     </div> 
     <app-save-buttons (save)="savePictureNote()" [navigateTo]="'picturelanding'"></app-save-buttons>
     <div class="picture-note-field-conatiner">
+        <div class="picture-title">Add Image:</div>
         <app-picture (valueChange)="updatePictureValue($event)" class="picture-input"></app-picture>
 
         <div class="picture-title">Title:</div>

@@ -14,10 +14,11 @@
 </div>
 
 <div class="custom-note-input-field-container">
+    <div class="field-title" style="margin-bottom: 10px;" *ngIf="showTitle === true" >Title</div>
     <app-title (valueChange)="updateTitleValue($event)" *ngIf="showTitle === true" class="title-input"></app-title>
-
+    <div class="field-title-description" style="margin-top: 10px;" *ngIf="showDescription === true">Add Description</div>
     <app-description (valueChange)="updateDescriptionValue($event)" *ngIf="showDescription === true" class="article-description-input"></app-description>
-    
+    <div class="field-title" *ngIf="showPicture === true">Add Image</div>
     <app-picture (valueChange)="updatePictureValue($event)" *ngIf="showPicture === true" class="picture-input"></app-picture>
     
     <app-document (documentChange)="updateDocumentValue($event)" *ngIf="showDocument === true" (documentTypeChange)="updateDocumentTypeValue($event)" class="document-input"></app-document>
