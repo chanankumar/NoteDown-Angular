@@ -3,16 +3,8 @@
         <div class="align-to-left">
             Picture Note
         </div>
-        <div class="actionButtonContainer align-to-right">
-            <button class="actionButtonSave" (click)="savePictureNote()">
-                Save
-            </button>
-            <button class="actionButtonCancel" (click)="goToPictureNoteLanding()">
-                Cancel
-            </button>
-        </div>
     </div> 
-    
+    <app-save-buttons (save)="savePictureNote()" [navigateTo]="'picturelanding'"></app-save-buttons>
     <div class="picture-note-field-conatiner">
         <app-picture (valueChange)="updatePictureValue($event)" class="picture-input"></app-picture>
 

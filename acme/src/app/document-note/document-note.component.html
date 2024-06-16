@@ -5,12 +5,7 @@
             Documnet Note
         </div>
         <div class="actionButtonContainer align-to-right">
-            <button class="actionButtonSave" (click)="saveDocumentNote()">
-                Save
-            </button>
-            <button class="actionButtonCancel" (click)="goToDocumentNoteLanding()">
-                Cancel
-            </button>
+            <app-save-buttons (save)="saveDocumentNote()" [navigateTo]="'documentlanding'"></app-save-buttons>
         </div>
     </div> 
     

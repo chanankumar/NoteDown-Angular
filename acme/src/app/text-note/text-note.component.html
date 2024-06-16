@@ -4,12 +4,8 @@
             Text Note
         </div>
         <div class="actionButtonContainer align-to-right">
-            <button class="actionButtonSave" (click)="saveTextNote()">
-                Save
-            </button>
-            <button class="actionButtonCancel" (click)="goToTextNoteLanding()">
-                Cancel
-            </button>
+            <app-save-buttons (save)="saveTextNote()" [navigateTo]="'textlanding'"></app-save-buttons>
+
         </div>
     </div> 
     

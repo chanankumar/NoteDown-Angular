@@ -20,10 +20,6 @@ export class PictureNoteComponent {
     this.router.navigate(['picturelanding']);
   } 
 
-  goToPictureNoteLanding() {
-    this.router.navigate(['picturelanding']);
-  }
-
   updateDescriptionValue(value:string) {
     this.descriptionValue = value;
   }

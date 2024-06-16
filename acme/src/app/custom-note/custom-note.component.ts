@@ -142,9 +142,6 @@ export class CustomNoteComponent {
       data['title'] = this.documentTypeValue
     }
     dataCenter.customnote.push(data);
-    this.goToCustomNoteLanding();
-  }
-  goToCustomNoteLanding() {
     this.router.navigate(['customlanding'])
   }
 }

@@ -8,12 +8,7 @@
             <button class="custom-note-action-button" (click)="addDocument()" [disabled]="showDocument === true">Add Document</button>
         </div>
         <div class="actionButtonContainer align-to-right">
-            <button class="actionButtonSave" (click)="saveCustomNote()">
-                Save
-            </button>
-            <button class="actionButtonCancel" (click)="goToCustomNoteLanding()">
-                Cancel
-            </button>
+            <app-save-buttons (save)="saveCustomNote()" [navigateTo]="'customlanding'"></app-save-buttons>
         </div>
     </div> 
 </div>

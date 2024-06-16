@@ -20,10 +20,6 @@ export class DocumentNoteComponent {
     this.router.navigate(['documentlanding']);
   } 
 
-  goToDocumentNoteLanding() {
-    this.router.navigate(['documentlanding']);
-  }
-
   updateTitleValue(value:string) {
     this.titleValue = value;
   }

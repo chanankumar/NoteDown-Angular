@@ -18,10 +18,6 @@ export class ArticleNoteComponent {
     this.router.navigate(['articlelanding']);
   } 
 
-  goToArticleNoteLanding() {
-    this.router.navigate(['articlelanding']);
-  }
-
   updateDescriptionValue(value:string) {
     this.descriptionValue = value;
   }

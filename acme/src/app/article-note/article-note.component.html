@@ -1,16 +1,11 @@
 <div class="article-note-container">
-
+    <h3>Article Note</h3>
     <div class="alignment-container">
         <div class="align-to-left">
             Article Note
         </div>
         <div class="actionButtonContainer align-to-right">
-            <button class="actionButtonSave" (click)="saveArticleNote()">
-                Save
-            </button>
-            <button class="actionButtonCancel" (click)="goToArticleNoteLanding()">
-                Cancel
-            </button>
+            <app-save-buttons (save)="saveArticleNote()" [navigateTo]="'articlelanding'"></app-save-buttons>
         </div>
     </div> 
     

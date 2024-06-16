@@ -25,6 +25,7 @@ import { commonReducer, navigationReducer } from './store/navigation.reducer';
 import { CustomNoteLandingComponent } from './custom-note-landing/custom-note-landing.component';
 import { CustomNoteComponent } from './custom-note/custom-note.component';
 import { NotesActionButtonComponent } from './notes-action-button/notes-action-button.component';
+import { SaveButtonsComponent } from './save-buttons/save-buttons.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { NotesActionButtonComponent } from './notes-action-button/notes-action-b
     DocumentNoteLandingComponent,
     CustomNoteComponent,
     CustomNoteLandingComponent,
-    NotesActionButtonComponent
+    NotesActionButtonComponent,
+    SaveButtonsComponent
   ],
   imports: [
     BrowserModule,
