@@ -39,12 +39,4 @@ export class CustomNoteLandingComponent {
     });
     
   }
-
-  goToAddCustomNote() {
-    this.router.navigate(['/custom']);
-  }
-
-  goToHomePage() {
-    this.router.navigate(['/home']);
-  }
 }

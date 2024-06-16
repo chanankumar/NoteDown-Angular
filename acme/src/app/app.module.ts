@@ -24,6 +24,7 @@ import { NavigationEffects } from './store/navigation.effects';
 import { commonReducer, navigationReducer } from './store/navigation.reducer';
 import { CustomNoteLandingComponent } from './custom-note-landing/custom-note-landing.component';
 import { CustomNoteComponent } from './custom-note/custom-note.component';
+import { NotesActionButtonComponent } from './notes-action-button/notes-action-button.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { CustomNoteComponent } from './custom-note/custom-note.component';
     PictureNoteLandingComponent,
     DocumentNoteLandingComponent,
     CustomNoteComponent,
-    CustomNoteLandingComponent
+    CustomNoteLandingComponent,
+    NotesActionButtonComponent
   ],
   imports: [
     BrowserModule,

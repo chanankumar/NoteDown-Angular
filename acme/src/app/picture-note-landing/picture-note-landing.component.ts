@@ -35,11 +35,4 @@ export class PictureNoteLandingComponent {
       this.pictureNoteData.push(element);
     });
   }
-  goToAddPictureNote() {
-    this.router.navigate(['picture']);
-  }
-
-  goToHomePage(){
-    this.router.navigate(['home']);
-  } 
 }

@@ -1,9 +1,6 @@
 <div class="showPictureNoteContainer">
 
-    <div class="actionButtonContainer align-to-right">
-        <button class="" (click)="goToAddPictureNote()">New</button>
-        <button class="" (click)="goToHomePage()">back</button>
-    </div>
+    <app-notes-action-button [navigateTo]="'picture'"></app-notes-action-button>
     <div *ngFor = 'let data of pictureNoteData;' class="showPictureNote">
         <span class="image-container">
             <img class = "imagePreview" [src]="data.imageUrl" alt="Image Preview">

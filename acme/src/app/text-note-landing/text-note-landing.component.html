@@ -1,6 +1,6 @@
 <div class="showTextNoteContainer">
 
-    <div class="actionButtonContainer align-to-right">
+    <div *ngIf="showActionButton === true" class="actionButtonContainer align-to-right">
         <button class="" (click)="goToAddTextNote()">New</button>
         <button class="" (click)="goToHomePage()">back</button>
     </div>

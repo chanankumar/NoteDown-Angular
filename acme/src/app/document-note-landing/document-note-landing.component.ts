@@ -45,12 +45,4 @@ export class DocumentNoteLandingComponent {
     // Create a trusted URL for the PDF content
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
-
-  goToAddDocumentNote() {
-    this.router.navigate(['document']);
-  }
-
-  goToHomePage(){
-    this.router.navigate(['home']);
-  }
 }

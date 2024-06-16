@@ -1,9 +1,6 @@
 <div class="showArticleNoteContainer">
 
-    <div class="actionButtonContainer align-to-right">
-        <button class="" (click)="goToAddDocumentNote()">New</button>
-        <button class="" (click)="goToHomePage()">back</button>
-    </div>
+    <app-notes-action-button [navigateTo]="'document'"></app-notes-action-button>
 
     <div *ngFor = 'let data of documentNoteData;' class="showDocumentNote">
         <div class="document-preview">

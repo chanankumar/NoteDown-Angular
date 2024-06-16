@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { dataCenter } from '../data';
 import { Router } from '@angular/router';
 import { Store, select } from '@ngrx/store';
@@ -14,6 +14,7 @@ import { AppState } from '../store/state';
 })
 export class TextNoteLandingComponent {
   textNoteData:any = [];
+  @Input() showActionButton:boolean = true;
   // commonObject$: Observable<[{ description:string }]>;
   constructor(private router: Router, private store: Store<{ navigation: { path: string[] } }>) {}
   

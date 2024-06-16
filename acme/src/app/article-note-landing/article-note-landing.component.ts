@@ -19,12 +19,4 @@ export class ArticleNoteLandingComponent {
       this.articleNoteData.push(element);
     });
   }
-
-  goToAddArticleNote() {
-    this.router.navigate(['article']);
-  }
-
-  goToHomePage(){
-    this.router.navigate(['home']);
-  }
 }

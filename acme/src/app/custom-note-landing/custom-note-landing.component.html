@@ -1,9 +1,7 @@
 <div class="showCustomNoteContainer">
 
-    <div class="actionButtonContainer align-to-right">
-        <button class="" (click)="goToAddCustomNote()">New</button>
-        <button class="" (click)="goToHomePage()">back</button>
-    </div>
+    <app-notes-action-button [navigateTo]="'custom'"></app-notes-action-button>
+    
     <div *ngFor = 'let data of customNoteData;' class="showCustomNote">
 
         <div class="custom-note-container">

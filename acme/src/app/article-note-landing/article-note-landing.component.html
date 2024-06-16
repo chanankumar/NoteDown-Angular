@@ -1,9 +1,6 @@
 <div class="showArticleNoteContainer">
 
-    <div class="actionButtonContainer align-to-right">
-        <button class="" (click)="goToAddArticleNote()">New</button>
-        <button class="" (click)="goToHomePage()">back</button>
-    </div>
+    <app-notes-action-button [navigateTo]="'article'"></app-notes-action-button>
     <div *ngFor = 'let data of articleNoteData;' class="showArticleNote">
         <div class="article-title">
             {{data.title}} : 
