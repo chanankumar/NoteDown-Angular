@@ -5,7 +5,7 @@ import { dataCenter } from '../data';
 @Component({
   selector: 'app-picture-note-landing',
   templateUrl: './picture-note-landing.component.html',
-  styleUrl: './picture-note-landing.component.css'
+  styleUrl: './picture-note-landing.component.scss'
 })
 export class PictureNoteLandingComponent {
   @Input() showActionButton = true;

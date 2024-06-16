@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-notes-action-button',
   templateUrl: './notes-action-button.component.html',
-  styleUrl: './notes-action-button.component.css'
+  styleUrl: './notes-action-button.component.scss'
 })
 export class NotesActionButtonComponent {
 

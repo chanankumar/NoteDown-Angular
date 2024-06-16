@@ -5,7 +5,7 @@ import { dataCenter } from '../data';
 @Component({
   selector: 'app-picture-note',
   templateUrl: './picture-note.component.html',
-  styleUrl: './picture-note.component.css'
+  styleUrl: './picture-note.component.scss'
 })
 export class PictureNoteComponent {
   descriptionValue: string = '';

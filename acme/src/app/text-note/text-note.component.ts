@@ -8,7 +8,7 @@ import { updateCommonData } from '../store/navigation.actions';
 @Component({
   selector: 'app-text-note',
   templateUrl: './text-note.component.html',
-  styleUrl: './text-note.component.css'
+  styleUrl: './text-note.component.scss'
 })
 export class TextNoteComponent {
   descriptionValue: string = '';

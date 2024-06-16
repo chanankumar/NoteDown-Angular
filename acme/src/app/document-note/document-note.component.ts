@@ -5,7 +5,7 @@ import { dataCenter } from '../data';
 @Component({
   selector: 'app-document-note',
   templateUrl: './document-note.component.html',
-  styleUrl: './document-note.component.css'
+  styleUrl: './document-note.component.scss'
 })
 export class DocumentNoteComponent {
   documentValue: any;

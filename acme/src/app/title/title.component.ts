@@ -3,7 +3,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 @Component({
   selector: 'app-title',
   templateUrl: './title.component.html',
-  styleUrl: './title.component.css'
+  styleUrl: './title.component.scss'
 })
 export class TitleComponent {
   inputValue: string = '';

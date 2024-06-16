@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-custom-note',
   templateUrl: './custom-note.component.html',
-  styleUrl: './custom-note.component.css'
+  styleUrl: './custom-note.component.scss'
 })
 export class CustomNoteComponent {
 

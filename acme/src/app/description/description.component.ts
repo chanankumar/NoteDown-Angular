@@ -3,7 +3,7 @@ import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular
 @Component({
   selector: 'app-description',
   templateUrl: './description.component.html',
-  styleUrl: './description.component.css'
+  styleUrl: './description.component.scss'
 })
 export class DescriptionComponent {
 

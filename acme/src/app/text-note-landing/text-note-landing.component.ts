@@ -10,7 +10,7 @@ import { AppState } from '../store/state';
 @Component({
   selector: 'app-text-note-landing',
   templateUrl: './text-note-landing.component.html',
-  styleUrl: './text-note-landing.component.css'
+  styleUrl: './text-note-landing.component.scss'
 })
 export class TextNoteLandingComponent {
   textNoteData:any = [];

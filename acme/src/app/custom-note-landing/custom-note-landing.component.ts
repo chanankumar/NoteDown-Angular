@@ -6,7 +6,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser'
 @Component({
   selector: 'app-custom-note-landing',
   templateUrl: './custom-note-landing.component.html',
-  styleUrl: './custom-note-landing.component.css'
+  styleUrl: './custom-note-landing.component.scss'
 })
 export class CustomNoteLandingComponent {
   customNoteData = []; 

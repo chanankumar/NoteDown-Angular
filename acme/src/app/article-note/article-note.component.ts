@@ -5,7 +5,7 @@ import { dataCenter } from '../data';
 @Component({
   selector: 'app-article-note',
   templateUrl: './article-note.component.html',
-  styleUrl: './article-note.component.css'
+  styleUrl: './article-note.component.scss'
 })
 export class ArticleNoteComponent {
   descriptionValue: string = '';

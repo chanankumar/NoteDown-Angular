@@ -7,7 +7,7 @@ import { navigateTo } from '../store/navigation.actions';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 

@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-save-buttons',
   templateUrl: './save-buttons.component.html',
-  styleUrl: './save-buttons.component.css'
+  styleUrl: './save-buttons.component.scss'
 })
 export class SaveButtonsComponent {
   @Output() save : EventEmitter<any> = new EventEmitter;

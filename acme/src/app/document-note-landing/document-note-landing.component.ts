@@ -6,7 +6,7 @@ import { dataCenter } from '../data';
 @Component({
   selector: 'app-document-note-landing',
   templateUrl: './document-note-landing.component.html',
-  styleUrl: './document-note-landing.component.css'
+  styleUrl: './document-note-landing.component.scss'
 })
 export class DocumentNoteLandingComponent {
   fileObjectURL: string;
