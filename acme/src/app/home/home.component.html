@@ -1,8 +1,31 @@
 <div class="note-container">
-    <div class="note-item" (click)="navigateUsingNgrx()">Text Note</div>
-    <div class="note-item" (click)="navigateTo('articlelanding')">Article Note</div>
-    <div class="note-item" (click)="navigateTo('picturelanding')">Picture Note</div>
-    <div class="note-item" (click)="navigateTo('documentlanding')">Document Note</div>
-    <div class="note-item" (click)="navigateTo('customlanding')">Custom Note</div>
+    <div class="note-item" (click)="navigateUsingNgrx()">
+        Text Note
+        <ng-container *ngTemplateOutlet="buttonTemplate; context: { navigationPath: 'text'}"></ng-container>
+    </div>
+    <div class="note-item" (click)="navigateTo('articlelanding')">
+        Article Note
+        <ng-container *ngTemplateOutlet="buttonTemplate; context: { navigationPath: 'article'}"></ng-container>
+    </div>
+    <div class="note-item" (click)="navigateTo('picturelanding')">
+        Picture Note
+        <ng-container *ngTemplateOutlet="buttonTemplate; context: { navigationPath: 'picture'}"></ng-container>
+    </div>
+    <div class="note-item" (click)="navigateTo('documentlanding')">
+        Document Note
+        <ng-container *ngTemplateOutlet="buttonTemplate; context: { navigationPath: 'document'}"></ng-container>
+    </div>
+    <div class="note-item" (click)="navigateTo('customlanding')">
+        Custom Note
+        <ng-container *ngTemplateOutlet="buttonTemplate; context: { navigationPath: 'custom'}"></ng-container>
+    </div>
     <div class="note-item" (click)="navigateTo('notes')">Your Notes</div>
 </div>
+
+
+
+<ng-template #buttonTemplate let-navigationPath="navigationPath">
+    <div class="button-container">
+        <button type="button" class="btn" (click)="navigateTo(navigationPath)">Add</button>
+    </div>
+  </ng-template>
