@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { dataCenter } from '../data';
 import { Router } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser'
@@ -9,7 +9,8 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser'
   styleUrl: './custom-note-landing.component.css'
 })
 export class CustomNoteLandingComponent {
-  customNoteData = [];
+  customNoteData = []; 
+  @Input() showActionButton:boolean = true;
 
   constructor(public sanitizer: DomSanitizer, private router:Router) {}
   

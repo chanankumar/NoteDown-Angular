@@ -1,0 +1,5 @@
+.picturenote, .documentnote, .customnote {
+    margin : 20px
+}
+
+:host(app-notes) {height: 100%; width: 100%;}

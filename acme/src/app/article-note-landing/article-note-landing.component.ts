@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { dataCenter } from '../data';
 import { Router } from '@angular/router';
 
@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrl: './article-note-landing.component.css'
 })
 export class ArticleNoteLandingComponent {
-
+  @Input() showActionButton:boolean = true;
   constructor (private router:Router) {}
 
   articleNoteData:any = []; 

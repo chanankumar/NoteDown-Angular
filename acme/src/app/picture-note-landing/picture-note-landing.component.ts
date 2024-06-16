@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { dataCenter } from '../data';
 
@@ -8,6 +8,8 @@ import { dataCenter } from '../data';
   styleUrl: './picture-note-landing.component.css'
 })
 export class PictureNoteLandingComponent {
+  @Input() showActionButton = true;
+  
   constructor (private router:Router) {}
 
   pictureNoteData:any = []; 

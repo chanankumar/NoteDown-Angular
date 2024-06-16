@@ -1,6 +1,6 @@
 <div class="showArticleNoteContainer">
     <h3>Document Note</h3>
-    <app-notes-action-button [navigateTo]="'document'"></app-notes-action-button>
+    <app-notes-action-button *ngIf="showActionButton === true" [navigateTo]="'document'"></app-notes-action-button>
 
     <div *ngFor = 'let data of documentNoteData;' class="showDocumentNote">
         <div class="document-preview">

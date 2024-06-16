@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 import { dataCenter } from '../data';
@@ -12,6 +12,9 @@ export class DocumentNoteLandingComponent {
   fileObjectURL: string;
   uploadedFile: any;
   pdfBase64String: string;
+
+  @Input() showActionButton = true;
+  
   constructor (public sanitizer: DomSanitizer, private router:Router) {}
 
   documentNoteData:any = []; 

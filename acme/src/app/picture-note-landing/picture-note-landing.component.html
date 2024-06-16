@@ -1,6 +1,6 @@
 <div class="showPictureNoteContainer">
     <h3>Picture Note</h3>
-    <app-notes-action-button [navigateTo]="'picture'"></app-notes-action-button>
+    <app-notes-action-button *ngIf="showActionButton === true" [navigateTo]="'picture'"></app-notes-action-button>
     <div *ngFor = 'let data of pictureNoteData;' class="showPictureNote">
         <span class="image-container">
             <img class = "imagePreview" [src]="data.imageUrl" alt="Image Preview">
