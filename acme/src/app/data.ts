@@ -8,5 +8,10 @@ export let dataCenter:any =  {
     "documentnotes" : [{
         "title" : "title" ,
         "documenttype" : '.pdf'
+    }],
+    'customnote' : [{
+        "title" : "title" ,
+        "documenttype" : '.pdf',
+        'description' : 'example'
     }]
 }

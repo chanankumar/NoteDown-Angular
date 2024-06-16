@@ -21,8 +21,9 @@ import { DocumentNoteLandingComponent } from './document-note-landing/document-n
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { NavigationEffects } from './store/navigation.effects';
-import { CustomNoteComponent } from './custom-note/custom-note.component';
 import { commonReducer, navigationReducer } from './store/navigation.reducer';
+import { CustomNoteLandingComponent } from './custom-note-landing/custom-note-landing.component';
+import { CustomNoteComponent } from './custom-note/custom-note.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { commonReducer, navigationReducer } from './store/navigation.reducer';
     ArticleNoteLandingComponent,
     PictureNoteLandingComponent,
     DocumentNoteLandingComponent,
-    CustomNoteComponent
+    CustomNoteComponent,
+    CustomNoteLandingComponent
   ],
   imports: [
     BrowserModule,

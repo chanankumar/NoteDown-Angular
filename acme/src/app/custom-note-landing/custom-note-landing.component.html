@@ -1,0 +1,29 @@
+<div class="showCustomNoteContainer">
+
+    <div class="actionButtonContainer align-to-right">
+        <button class="" (click)="goToAddCustomNote()">New</button>
+        <button class="" (click)="goToHomePage()">back</button>
+    </div>
+    <div *ngFor = 'let data of customNoteData;' class="showCustomNote">
+
+        <div class="custom-note-container">
+            <div *ngIf="data.filesUrl !== null" class="custom-note-left">
+                <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(data.filesUrl)" width="500px" height="300px"></iframe>
+            </div>
+            <div class="custom-note-center">
+                <div *ngIf="data.title !== null" class="Custom-title">
+                    {{data.title}}
+                </div>
+                <div *ngIf="data.description !== null" class="Custom-description">
+                    {{data.description}}
+                </div>
+                <div *ngIf="data.documenttype !== null" class="Custom-document-type">
+                    Type : {{data.documenttype}}
+                </div>
+            </div>
+            <div class="custom-note-right">
+                <img *ngIf="data.imageUrl !== null" class = "imagePreview" [src]="data.imageUrl" alt="Image Preview" width="500px" height="300px">
+            </div>
+          </div>
+    </div>
+</div>

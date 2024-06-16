@@ -6,14 +6,4 @@
     margin-right: 10px;
 }
 
-.document-title {
-    margin-bottom: 5px;
-}
 
-.document-input { 
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-
-
-:host(app-document-note) {height: 100%; width: 100%;}

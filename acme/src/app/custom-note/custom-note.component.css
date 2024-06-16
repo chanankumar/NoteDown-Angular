@@ -1,0 +1,26 @@
+.custom-note-container {
+    margin : 10px;
+    padding: 10px;
+}
+
+.custom-note-action-button {
+    margin-right: 10px
+}
+
+.document-title {
+    margin-bottom: 5px;
+}
+
+.document-input { 
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.custom-note-input-field-container {
+    margin : 20px
+}
+.actionButtonSave {
+    margin-right: 10px;
+}
+
+:host(app-custom-note) {height: 100%; width: 100%;}

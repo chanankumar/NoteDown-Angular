@@ -1,1 +1,30 @@
-<p>custom-note works!</p>
+<div class="custom-note-container">
+
+    <div class="alignment-container">
+        <div class="align-to-left">
+            <button class="custom-note-action-button" (click)="addTitle()" [disabled]="showTitle === true">Add title</button>
+            <button class="custom-note-action-button" (click)="addDescription()" [disabled]="showDescription === true">Add description</button>
+            <button class="custom-note-action-button" (click)="addPicture()" [disabled]="showPicture === true">Add Picture</button>
+            <button class="custom-note-action-button" (click)="addDocument()" [disabled]="showDocument === true">Add Document</button>
+        </div>
+        <div class="actionButtonContainer align-to-right">
+            <button class="actionButtonSave" (click)="saveCustomNote()">
+                Save
+            </button>
+            <button class="actionButtonCancel" (click)="goToCustomNoteLanding()">
+                Cancel
+            </button>
+        </div>
+    </div> 
+</div>
+
+<div class="custom-note-input-field-container">
+    <app-title (valueChange)="updateTitleValue($event)" *ngIf="showTitle === true" class="title-input"></app-title>
+
+    <app-description (valueChange)="updateDescriptionValue($event)" *ngIf="showDescription === true" class="article-description-input"></app-description>
+    
+    <app-picture (valueChange)="updatePictureValue($event)" *ngIf="showPicture === true" class="picture-input"></app-picture>
+    
+    <app-document (documentChange)="updateDocumentValue($event)" *ngIf="showDocument === true" (documentTypeChange)="updateDocumentTypeValue($event)" class="document-input"></app-document>
+    
+</div>
