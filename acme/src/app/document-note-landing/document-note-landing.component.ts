@@ -40,6 +40,7 @@ export class DocumentNoteLandingComponent {
       documentData = JSON.parse(localStorage.getItem('documentSaved'));
     }
     documentNoteData.forEach((element:any,index) => {
+    // assigning doc path as it is stored in different location
       element.filesUrl = documentData[index].filesUrl;
       this.documentNoteData.push(element);
     });

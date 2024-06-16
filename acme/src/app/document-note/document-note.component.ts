@@ -41,6 +41,7 @@ export class DocumentNoteComponent {
     this.convertToBase64();
  }
  convertToBase64(): void {
+  // getting doc base64path
   const reader = new FileReader();
   reader.onload = () => {
     this.pdfBase64String = reader.result as string;

@@ -29,6 +29,7 @@ export class PictureNoteComponent {
   }
 
   updatePictureValue(value) {
+    // getting image base64path
     // this.pictureValue = value;
     const reader = new FileReader();
 

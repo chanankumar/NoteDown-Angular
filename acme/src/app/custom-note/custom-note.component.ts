@@ -61,6 +61,7 @@ export class CustomNoteComponent {
   }
 
   async getImagePath (value) {
+    // getting image path to be storaged at local storage by using base64
     return new Promise(resolve => {
 
       if(value === null) {
@@ -78,6 +79,7 @@ export class CustomNoteComponent {
   }
 
   async getDocPath (value) {
+    // getting doc path to be storaged at local storage by using base64
     return new Promise(resolve => {
 
       if(value === null) {

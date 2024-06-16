@@ -33,6 +33,7 @@ export class PictureNoteLandingComponent {
       imagesData = JSON.parse(localStorage.getItem('imagesSaved'));
     }
     data.forEach((element:any,index) => {
+    // assigning image as it is stored in different location
       element.imageUrl = imagesData[index].imageUrl;
       this.pictureNoteData.push(element);
     });

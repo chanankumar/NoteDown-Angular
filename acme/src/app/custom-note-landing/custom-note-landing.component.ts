@@ -34,6 +34,7 @@ export class CustomNoteLandingComponent {
       imagesData = JSON.parse(localStorage.getItem('customSavedFiles'));
     }
     data.forEach((element:any,index) => {
+      // assigning image and doc path as it is stored in different location
       element.imageUrl = imagesData[index].imageUrl;
       element.filesUrl = imagesData[index].filesUrl;
       this.customNoteData.push(element);
